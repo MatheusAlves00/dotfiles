@@ -346,7 +346,7 @@ nnoremap <leader>sc :CloseSession<CR>
 "" Tabs
 " nnoremap <Tab> gt <-- I was having a problem with ctrl+i
 nnoremap <S-Tab> gT
-nnoremap <silent> <S-t> :tabnew<CR>
+" nnoremap <silent> <S-t> :tabnew<CR>
 
 "" Set working directory
 nnoremap <leader>. :lcd %:p:h<CR>
