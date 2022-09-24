@@ -50,7 +50,7 @@ Plug 'Yggdroot/indentLine'
 Plug 'editor-bootstrap/vim-bootstrap-updater'
 Plug 'tpope/vim-rhubarb' " required by fugitive to :Gbrowse
 Plug 'Mizux/vim-colorschemes'
-Plug 'morhetz/gruvbox'
+Plug 'NLKNguyen/papercolor-theme'
 
 if isdirectory('/usr/local/opt/fzf')
   Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
@@ -159,8 +159,10 @@ set number
 set relativenumber
 
 let no_buffers_menu=1
-let g:gruvbox_contrast_dark = 'hard'
-colorscheme gruvbox
+let g:oceanic_next_terminal_bold = 1
+let g:oceanic_next_terminal_italic = 1
+set background=dark
+colorscheme PaperColor
 set termguicolors
 
 set mousemodel=popup
@@ -227,8 +229,7 @@ if exists("*fugitive#statusline")
   set statusline+=%{fugitive#statusline()}
 endif
 
-" vim-airline
-let g:airline_theme = 'gruvbox' " powerlineish
+let g:airline_theme='papercolor'
 let g:airline#extensions#branch#enabled = 1
 let g:airline#extensions#ale#enabled = 1
 let g:airline#extensions#tabline#enabled = 1
